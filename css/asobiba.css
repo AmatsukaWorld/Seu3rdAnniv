@@ -1,0 +1,1584 @@
+@charset "utf-8";
+
+body {
+    max-width: 1920px;
+    margin: auto;
+    background-size: cover;
+}
+
+
+/* * ヘッダー * */
+
+.ヘッダー {
+    position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 50px;
+    padding: 0px 0px 10px 0px;
+    background-color: rgba(255, 255, 255, 70%);
+    z-index: 99;
+}
+
+.h横並び {
+    position: fixed;
+    top: 20px;
+    left: 40px;
+    display: grid;
+    grid-template-columns: 50px 10px 200px;
+    gap: 20px;
+}
+
+.hホーム {
+    cursor: pointer;
+    font-family: ab-babywalk, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    color: #647689;
+    padding: 0px 0px 1px 0px;
+}
+
+.hホーム::before {
+    background: #647689;
+    content: '';
+    width: 16%;
+    height: 2px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    transform-origin: center top;
+    transform: scale(0, 1);
+    transition: transform .3s;
+}
+
+.hホーム:hover::before {
+    transform-origin: center top;
+    transform: scale(1, 1);
+}
+
+a {
+    text-decoration: none;
+    color: #647689;
+}
+
+.h矢印 {
+    width: 100%;
+    padding: 3px 0px 0px 0px;
+}
+
+.hあそびば {
+    cursor: default;
+    font-family: ab-babywalk, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    color: #647689;
+}
+
+.hロゴ {
+    position: fixed;
+    top: 2px;
+    right: 20px;
+    width: 8%;
+}
+
+
+
+.ロゴ {
+    width: 860px;
+    margin:0 auto;
+    padding: 140px 20px 0px 0px;
+}
+
+.ロゴ画像 {
+    width: 100%;
+}
+
+
+
+/* * なかみ * */
+
+.横並び {
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+    gap: 50px;
+    text-align: center;
+    margin: 70px 70px 0px 70px;
+}
+
+
+
+.スクショ {
+    width: 100%;
+    transition: .3s;
+    border-radius: 10px;
+    margin: 50px 0px 0px 0px;
+}
+
+.スクショ:hover {
+    transform: scale(1.05);
+    box-shadow: 5px 8px white;
+}
+
+
+
+.開く1 {
+    cursor: pointer;
+}
+#ポップアップ1 {
+    display: none;
+}
+.オーバーレイ1 {
+    display: none;
+}
+#ポップアップ1:checked + .オーバーレイ1 {
+    display: block;
+    z-index: 9999;
+    background-color: #00000070;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+}
+.window1 {
+    width: 90vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.並び1 {
+    display: grid;
+    grid-template-columns: 700px 600px;
+    gap: 100px;
+    
+}
+
+.スクショ1 {
+    border: 10px solid white;
+    width: 100%;
+    margin: 0px 0px 0px 50px;
+}
+
+.n文1 {
+    width: 60%;
+    text-align: left;
+    font-family: fot-tsukuardgothic-std, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    
+}
+
+.n見出し1 {
+    width: 130px;
+    height: 30px;
+    color: #647689;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 50px 0px 20px 0px;
+}
+
+.吹き出し1 {
+    height: 60px;
+    color: #647689;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.閉じる1 {
+    cursor: pointer;
+    position: absolute;
+    top: 0px;
+    right: 50px;
+    font-size: 50px;
+    color: #c3eafe;
+    font-family: fot-tsukuardgothic-std, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+}
+
+
+
+
+
+.開く2 {
+    cursor: pointer;
+}
+#ポップアップ2 {
+    display: none;
+}
+.オーバーレイ2 {
+    display: none;
+}
+#ポップアップ2:checked + .オーバーレイ2 {
+    display: block;
+    z-index: 9999;
+    background-color: #00000070;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+}
+.window2 {
+    width: 90vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.並び2 {
+    display: grid;
+    grid-template-columns: 700px 600px;
+    gap: 100px;
+    
+}
+
+.スクショ2 {
+    border: 10px solid white;
+    width: 100%;
+    margin: 0px 0px 0px 50px;
+}
+
+.n文2 {
+    width: 60%;
+    text-align: left;
+    font-family: fot-tsukuardgothic-std, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    
+}
+
+.n見出し2 {
+    width: 130px;
+    height: 30px;
+    color: #647689;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 50px 0px 20px 0px;
+}
+
+.吹き出し2 {
+    height: 60px;
+    color: #647689;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.閉じる2 {
+    cursor: pointer;
+    position: absolute;
+    top: 0px;
+    right: 50px;
+    font-size: 50px;
+    color: #c3eafe;
+    font-family: fot-tsukuardgothic-std, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+}
+
+
+
+.開く3 {
+    cursor: pointer;
+}
+#ポップアップ3 {
+    display: none;
+}
+.オーバーレイ3 {
+    display: none;
+}
+#ポップアップ3:checked + .オーバーレイ3 {
+    display: block;
+    z-index: 9999;
+    background-color: #00000070;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+}
+.window3 {
+    width: 90vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.並び3 {
+    display: grid;
+    grid-template-columns: 700px 600px;
+    gap: 100px;
+    
+}
+
+.スクショ3 {
+    border: 10px solid white;
+    width: 80%;
+    margin: 0px 0px 0px 50px;
+}
+
+.n文3 {
+    width: 70%;
+    text-align: left;
+    font-family: fot-tsukuardgothic-std, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    
+}
+
+.n見出し3 {
+    width: 130px;
+    height: 30px;
+    color: #647689;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 50px 0px 20px 0px;
+}
+
+.吹き出し3 {
+    height: 60px;
+    color: #647689;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.閉じる3 {
+    cursor: pointer;
+    position: absolute;
+    top: 0px;
+    right: 50px;
+    font-size: 50px;
+    color: #c3eafe;
+    font-family: fot-tsukuardgothic-std, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+}
+
+
+
+.開く4 {
+    cursor: pointer;
+}
+#ポップアップ4 {
+    display: none;
+}
+.オーバーレイ4 {
+    display: none;
+}
+#ポップアップ4:checked + .オーバーレイ4 {
+    display: block;
+    z-index: 9999;
+    background-color: #00000070;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+}
+.window4 {
+    width: 90vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.並び4 {
+    display: grid;
+    grid-template-columns: 700px 600px;
+    gap: 100px;
+    
+}
+
+.スクショ4 {
+    border: 10px solid white;
+    width: 100%;
+    margin: 0px 0px 0px 50px;
+}
+
+.n文4 {
+    width: 70%;
+    text-align: left;
+    font-family: fot-tsukuardgothic-std, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    
+}
+
+.n見出し4 {
+    width: 130px;
+    height: 30px;
+    color: #647689;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 50px 0px 20px 0px;
+}
+
+.吹き出し4 {
+    height: 60px;
+    color: #647689;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.閉じる4 {
+    cursor: pointer;
+    position: absolute;
+    top: 0px;
+    right: 50px;
+    font-size: 50px;
+    color: #c3eafe;
+    font-family: fot-tsukuardgothic-std, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+}
+
+
+
+.開く5 {
+    cursor: pointer;
+}
+#ポップアップ5 {
+    display: none;
+}
+.オーバーレイ5 {
+    display: none;
+}
+#ポップアップ5:checked + .オーバーレイ5 {
+    display: block;
+    z-index: 9999;
+    background-color: #00000070;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+}
+.window5 {
+    width: 90vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.並び5 {
+    display: grid;
+    grid-template-columns: 700px 600px;
+    gap: 100px;
+}
+
+.スクショ5 {
+    margin: 0px 0px 0px 50px;
+    width: 60%;
+    border: 10px solid white;
+}
+
+
+.n文5 {
+    width: 70%;
+    text-align: left;
+    font-family: fot-tsukuardgothic-std, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.n見出し5 {
+    width: 130px;
+    height: 30px;
+    color: #647689;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 50px 0px 20px 0px;
+}
+
+.吹き出し5 {
+    height: 60px;
+    color: #647689;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.吹き出し5-2 {
+    height: 60px;
+    color: #647689;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0px 0px 0px;
+}
+
+.閉じる5 {
+    cursor: pointer;
+    position: absolute;
+    top: 0px;
+    right: 50px;
+    font-size: 50px;
+    color: #c3eafe;
+    font-family: fot-tsukuardgothic-std, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+}
+
+
+
+.開く6 {
+    cursor: pointer;
+}
+#ポップアップ6 {
+    display: none;
+}
+.オーバーレイ6 {
+    display: none;
+}
+#ポップアップ6:checked + .オーバーレイ6 {
+    display: block;
+    z-index: 9999;
+    background-color: #00000070;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+}
+.window6 {
+    width: 90vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.並び6 {
+    display: grid;
+    grid-template-columns: 700px 600px;
+    gap: 100px;
+    
+}
+
+.スクショ6 {
+    border: 10px solid white;
+    width: 100%;
+    margin: 0px 0px 0px 50px;
+}
+
+.n文6 {
+    width: 70%;
+    text-align: left;
+    font-family: fot-tsukuardgothic-std, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    
+}
+
+.n見出し6 {
+    width: 130px;
+    height: 30px;
+    color: #647689;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 50px 0px 20px 0px;
+}
+
+.吹き出し6 {
+    height: 90px;
+    color: #647689;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.閉じる6 {
+    cursor: pointer;
+    position: absolute;
+    top: 0px;
+    right: 50px;
+    font-size: 50px;
+    color: #c3eafe;
+    font-family: fot-tsukuardgothic-std, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+}
+
+
+
+.開く7 {
+    cursor: pointer;
+}
+#ポップアップ7 {
+    display: none;
+}
+.オーバーレイ7 {
+    display: none;
+}
+#ポップアップ7:checked + .オーバーレイ7 {
+    display: block;
+    z-index: 9999;
+    background-color: #00000070;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+}
+.window7 {
+    width: 90vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.並び7 {
+    display: grid;
+    grid-template-columns: 700px 600px;
+    gap: 100px;
+    
+}
+
+.スクショ7 {
+    border: 10px solid white;
+    width: 100%;
+    margin: 0px 0px 0px 50px;
+}
+
+.n文7 {
+    width: 70%;
+    text-align: left;
+    font-family: fot-tsukuardgothic-std, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    
+}
+
+.n見出し7 {
+    width: 130px;
+    height: 30px;
+    color: #647689;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 50px 0px 20px 0px;
+}
+
+.吹き出し7 {
+    height: 90px;
+    color: #647689;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.閉じる7 {
+    cursor: pointer;
+    position: absolute;
+    top: 0px;
+    right: 50px;
+    font-size: 50px;
+    color: #c3eafe;
+    font-family: fot-tsukuardgothic-std, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+}
+
+
+
+.開く8 {
+    cursor: pointer;
+}
+#ポップアップ8 {
+    display: none;
+}
+.オーバーレイ8 {
+    display: none;
+}
+#ポップアップ8:checked + .オーバーレイ8 {
+    display: block;
+    z-index: 9999;
+    background-color: #00000070;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+}
+.window8 {
+    width: 90vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.並び8 {
+    display: grid;
+    grid-template-columns: 700px 600px;
+    gap: 100px;
+    
+}
+
+.スクショ8 {
+    border: 10px solid white;
+    width: 100%;
+    margin: 0px 0px 0px 50px;
+}
+
+.n文8 {
+    width: 70%;
+    text-align: left;
+    font-family: fot-tsukuardgothic-std, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    
+}
+
+.n見出し8 {
+    width: 130px;
+    height: 30px;
+    color: #647689;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 50px 0px 20px 0px;
+}
+
+.吹き出し8 {
+    height: 120px;
+    color: #647689;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.閉じる8 {
+    cursor: pointer;
+    position: absolute;
+    top: 0px;
+    right: 50px;
+    font-size: 50px;
+    color: #c3eafe;
+    font-family: fot-tsukuardgothic-std, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+}
+
+
+
+.開く9 {
+    cursor: pointer;
+}
+#ポップアップ9 {
+    display: none;
+}
+.オーバーレイ9 {
+    display: none;
+}
+#ポップアップ9:checked + .オーバーレイ9 {
+    display: block;
+    z-index: 9999;
+    background-color: #00000070;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+}
+.window9 {
+    width: 90vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.並び9 {
+    display: grid;
+    grid-template-columns: 700px 600px;
+    gap: 100px;
+    
+}
+
+.スクショ9 {
+    border: 10px solid white;
+    width: 100%;
+    margin: 0px 0px 0px 50px;
+}
+
+.n文9 {
+    width: 70%;
+    text-align: left;
+    font-family: fot-tsukuardgothic-std, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    
+}
+
+.n見出し9 {
+    width: 130px;
+    height: 30px;
+    color: #647689;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 50px 0px 20px 0px;
+}
+
+.吹き出し9 {
+    height: 120px;
+    color: #647689;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.閉じる9 {
+    cursor: pointer;
+    position: absolute;
+    top: 0px;
+    right: 50px;
+    font-size: 50px;
+    color: #c3eafe;
+    font-family: fot-tsukuardgothic-std, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+}
+
+
+
+.開く10 {
+    cursor: pointer;
+}
+#ポップアップ10 {
+    display: none;
+}
+.オーバーレイ10 {
+    display: none;
+}
+#ポップアップ10:checked + .オーバーレイ10 {
+    display: block;
+    z-index: 9999;
+    background-color: #00000070;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+}
+.window10 {
+    width: 90vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.並び10 {
+    display: grid;
+    grid-template-columns: 700px 600px;
+    gap: 100px;
+}
+
+.スクショ10 {
+    border: 10px solid white;
+    width: 100%;
+    margin: 0px 0px 0px 50px;
+}
+
+.n文10 {
+    width: 70%;
+    text-align: left;
+    font-family: fot-tsukuardgothic-std, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    
+}
+
+.n見出し10 {
+    width: 130px;
+    height: 30px;
+    color: #647689;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 50px 0px 20px 0px;
+}
+
+.吹き出し10 {
+    height: 150px;
+    color: #647689;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.閉じる10 {
+    cursor: pointer;
+    position: absolute;
+    top: 0px;
+    right: 50px;
+    font-size: 50px;
+    color: #c3eafe;
+    font-family: fot-tsukuardgothic-std, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+}
+
+
+
+.開く11 {
+    cursor: pointer;
+}
+#ポップアップ11 {
+    display: none;
+}
+.オーバーレイ11 {
+    display: none;
+}
+#ポップアップ11:checked + .オーバーレイ11 {
+    display: block;
+    z-index: 9999;
+    background-color: #00000070;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+}
+.window11 {
+    width: 90vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.並び11 {
+    display: grid;
+    grid-template-columns: 700px 600px;
+    gap: 100px;
+    
+}
+
+.スクショ11 {
+    border: 10px solid white;
+    width: 100%;
+    margin: 0px 0px 0px 50px;
+}
+
+.n文11 {
+    width: 70%;
+    text-align: left;
+    font-family: fot-tsukuardgothic-std, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    
+}
+
+.n見出し11 {
+    width: 130px;
+    height: 30px;
+    color: #647689;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 50px 0px 20px 0px;
+}
+
+.吹き出し11 {
+    height: 90px;
+    color: #647689;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.閉じる11 {
+    cursor: pointer;
+    position: absolute;
+    top: 0px;
+    right: 50px;
+    font-size: 50px;
+    color: #aed2e7;
+    font-family: fot-tsukuardgothic-std, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+}
+
+
+
+.開く12 {
+    cursor: pointer;
+}
+#ポップアップ12 {
+    display: none;
+}
+.オーバーレイ12 {
+    display: none;
+}
+#ポップアップ12:checked + .オーバーレイ12 {
+    display: block;
+    z-index: 9999;
+    background-color: #00000070;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+}
+.window12 {
+    width: 90vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.並び12 {
+    display: grid;
+    grid-template-columns: 700px 600px;
+    gap: 100px;
+}
+
+.スクショ12 {
+    margin: 0px 0px 0px 50px;
+    width: 70%;
+    border: 10px solid white;
+}
+
+
+.n文12 {
+    width: 70%;
+    text-align: left;
+    font-family: fot-tsukuardgothic-std, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.n見出し12 {
+    width: 130px;
+    height: 30px;
+    color: #647689;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 50px 0px 20px 0px;
+}
+
+.吹き出し12 {
+    height: 150px;
+    color: #647689;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.吹き出し12-2 {
+    height: 60px;
+    color: #647689;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0px 0px 0px;
+}
+
+.閉じる12 {
+    cursor: pointer;
+    position: absolute;
+    top: 0px;
+    right: 50px;
+    font-size: 50px;
+    color: #c3eafe;
+    font-family: fot-tsukuardgothic-std, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+}
+
+
+
+.開く13 {
+    cursor: pointer;
+}
+#ポップアップ13 {
+    display: none;
+}
+.オーバーレイ13 {
+    display: none;
+}
+#ポップアップ13:checked + .オーバーレイ13 {
+    display: block;
+    z-index: 9999;
+    background-color: #00000070;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+}
+.window13 {
+    width: 90vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.並び13 {
+    display: grid;
+    grid-template-columns: 700px 600px;
+    gap: 100px;
+}
+
+.スクショ13 {
+    margin: 0px 0px 0px 50px;
+    width: 60%;
+    border: 10px solid white;
+}
+
+
+.n文13 {
+    width: 70%;
+    text-align: left;
+    font-family: fot-tsukuardgothic-std, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.n見出し13 {
+    width: 130px;
+    height: 30px;
+    color: #647689;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 50px 0px 20px 0px;
+}
+
+.吹き出し13 {
+    height: 60px;
+    color: #647689;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.吹き出し13-2 {
+    height: 60px;
+    color: #647689;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0px 0px 0px;
+}
+
+.閉じる13 {
+    cursor: pointer;
+    position: absolute;
+    top: 0px;
+    right: 50px;
+    font-size: 50px;
+    color: #c3eafe;
+    font-family: fot-tsukuardgothic-std, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+}
+
+
+
+.開く14 {
+    cursor: pointer;
+}
+#ポップアップ14 {
+    display: none;
+}
+.オーバーレイ14 {
+    display: none;
+}
+#ポップアップ14:checked + .オーバーレイ14 {
+    display: block;
+    z-index: 9999;
+    background-color: #00000070;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+}
+.window14 {
+    width: 90vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.並び14 {
+    display: grid;
+    grid-template-columns: 700px 600px;
+    gap: 100px;
+    
+}
+
+.スクショ14 {
+    border: 10px solid white;
+    width: 100%;
+    margin: 0px 0px 0px 50px;
+}
+
+.n文14 {
+    width: 70%;
+    text-align: left;
+    font-family: fot-tsukuardgothic-std, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    
+}
+
+.n見出し14 {
+    width: 130px;
+    height: 30px;
+    color: #647689;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 50px 0px 20px 0px;
+}
+
+.吹き出し14 {
+    height: 120px;
+    color: #647689;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.閉じる14 {
+    cursor: pointer;
+    position: absolute;
+    top: 0px;
+    right: 50px;
+    font-size: 50px;
+    color: #c3eafe;
+    font-family: fot-tsukuardgothic-std, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+}
+
+
+
+.開く15 {
+    cursor: pointer;
+}
+#ポップアップ15 {
+    display: none;
+}
+.オーバーレイ15 {
+    display: none;
+}
+#ポップアップ15:checked + .オーバーレイ15 {
+    display: block;
+    z-index: 9999;
+    background-color: #00000070;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+}
+.window15 {
+    width: 90vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.並び15 {
+    display: grid;
+    grid-template-columns: 700px 600px;
+    gap: 100px;
+    
+}
+
+.スクショ15 {
+    border: 10px solid white;
+    width: 100%;
+    margin: 0px 0px 0px 50px;
+}
+
+.n文15 {
+    width: 70%;
+    text-align: left;
+    font-family: fot-tsukuardgothic-std, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    
+}
+
+.n見出し15 {
+    width: 130px;
+    height: 30px;
+    color: #647689;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 50px 0px 20px 0px;
+}
+
+.吹き出し15 {
+    height: 150px;
+    color: #647689;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.閉じる15 {
+    cursor: pointer;
+    position: absolute;
+    top: 0px;
+    right: 50px;
+    font-size: 50px;
+    color: #c3eafe;
+    font-family: fot-tsukuardgothic-std, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+}
+
+
+
+/* * フッター * */
+
+.フッター {
+    position: relative;
+    width: 100%;
+    margin: 110px 0px 0px 0px;
+}
+
+.フッター画像 {
+    z-index: 1;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: #647689;
+}
+
+.段落 {
+    position: absolute;
+    bottom: 70px;
+    right: 0px;
+    display: grid;
+    grid-template-columns: 480px 480px 480px;
+    gap: 0px;
+}
+
+.文1 {
+    font-family: fot-tsukuardgothic-std, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    padding: 0px 50px 0px 50px;
+    text-align: center;
+    color: #647689;
+}
+
+.見出し1 {
+    font-size: 30px;
+    padding: 150px 0px 0px 0px;
+}
+
+.本文1 {
+    font-size: 20px;
+    line-height: 30px;
+}
+
+
+.文3 {
+    text-align: center;
+    padding: 200px 0px 0px 0px;
+    font-size: 40px;
+    color: #aed2e7;
+    line-height: 35px;
+}
+
+.矢印 {
+    font-family: fot-tsukuardgothic-std, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+
+    transition: 0.3s;
+}
+
+.矢印:hover {
+    transform: translate(0px, -10px);
+    cursor: pointer;
+    cursor: hand;
+}
+
+.文2 {
+    font-family: fot-tsukuardgothic-std, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    padding: 0px 50px 0px 50px;
+    text-align: center;
+    color: #647689;
+}
+
+.見出し2 {
+    font-size: 30px;
+
+}
+
+.本文2 {
+    font-size: 20px;
+    line-height: 30px;
+}
+
+
+
+.リンク付き {
+    padding: 20px 0px 0px 0px;
+}
+
+.リンク1 {
+    padding: 0px 0px 3px 0px;
+    position: relative
+
+}
+
+.リンク1::before {
+    background: #647689;
+    content: '';
+    width: 100%;
+    height: 1.5px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    transform-origin: center top;
+    transform: scale(0, 1);
+    transition: transform .3s;
+}
+
+.リンク1:hover::before {
+    transform-origin: center top;
+    transform: scale(1, 1);
+}
+
+.リンク2 {
+    padding: 0px 0px 3px 0px;
+    position: relative
+}
+
+.リンク2::before {
+    background: #647689;
+    content: '';
+    width: 100%;
+    height: 1.5px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    transform-origin: center top;
+    transform: scale(0, 1);
+    transition: transform .3s;
+}
+
+.リンク2:hover::before {
+    transform-origin: center top;
+    transform: scale(1, 1);
+}
+
+.リンク3 {
+    padding: 0px 0px 3px 0px;
+    position: relative
+}
+
+.リンク3::before {
+    background: #647689;
+    content: '';
+    width: 100%;
+    height: 1.5px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    transform-origin: center top;
+    transform: scale(0, 1);
+    transition: transform .3s;
+}
+
+.リンク3:hover::before {
+    transform-origin: center top;
+    transform: scale(1, 1);
+}
+
+.見出し3 {
+    padding: 50px 0px 0px 0px;
+    font-size: 20px;
+}
+
+.本文3 {
+    padding: 10px 0px 0px 0px;
+}

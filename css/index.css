@@ -1,0 +1,405 @@
+@charset "utf-8";
+
+body {
+    max-width: 1920px;
+    margin: auto;
+    background-size: cover;
+}
+
+/* * ヘッダー * */
+
+.ヘッダー {
+    position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 50px;
+    padding: 0px 0px 10px 0px;
+    background-color: rgba(255, 255, 255, 70%);
+    z-index: 99;
+}
+
+.h横並び {
+    position: fixed;
+    top: 20px;
+    right: 40px;
+    display: grid;
+    grid-template-columns: 200px 180px 200px;
+    gap: 20px;
+    cursor: pointer;
+    font-family: ab-babywalk, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    color: #647689;
+}
+
+.hおえかき {
+    text-align: center;
+    padding-bottom: 5px;
+    position: relative;
+}
+
+.hおえかき::before {
+    background: #647689;
+    content: '';
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    transform-origin: center top;
+    transform: scale(0, 1);
+    transition: transform .3s;
+}
+
+.hおえかき:hover::before {
+    transform-origin: center top;
+    transform: scale(1, 1);
+}
+
+.hあそびば {
+    text-align: center;
+    padding-bottom: 5px;
+    position: relative;
+}
+
+.hあそびば::before {
+    background: #647689;
+    content: '';
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    transform-origin: center top;
+    transform: scale(0, 1);
+    transition: transform .3s;
+}
+
+.hあそびば:hover::before {
+    transform-origin: center top;
+    transform: scale(1, 1);
+}
+
+.hおてがみ {
+    text-align: center;
+    padding-bottom: 5px;
+    position: relative;
+}
+
+.hおてがみ::before {
+    background: #647689;
+    content: '';
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    transform-origin: center top;
+    transform: scale(0, 1);
+    transition: transform .3s;
+}
+
+.hおてがみ:hover::before {
+    transform-origin: center top;
+    transform: scale(1, 1);
+}
+
+
+
+/* * メイン？ * */
+
+.ロゴ {
+    width: 1000px;
+    margin:0 auto;
+    padding: 100px 0px 0px 0px;
+}
+
+.ロゴ画像 {
+    width: 100%;
+}
+
+
+/* * おえかき * */
+
+.おえかき {
+    width: 500px;
+    padding: 170px 0px 0px 50px;
+}
+
+.おえかき画像 {
+    width: 100%;
+    transition: 0.3s;
+}
+
+.おえかき画像:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    cursor: hand;
+}
+
+
+
+.スライダーー {
+    position: relative;
+    
+}
+
+.スライダー枠 {
+    position: absolute;
+    top: 0px;
+    right: 200px;
+    z-index: 50;
+}
+
+.スライダー{
+    width:70%;
+    margin:0 auto;
+}
+
+.スライダー画像{
+	width:100%;
+}
+
+.スライダー .slick-slide{
+	height:auto!important;
+}
+
+.スライダー文字 .slick-slide{
+	height:auto!important;
+}
+
+.スライダー文字 {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+
+.s文字 {
+    font-family: fot-tsukuardgothic-std, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    color: white;
+}
+
+
+
+
+/* * あそびば * */
+
+.あそびば {
+    width: 500px;
+    padding: 80px 0px 0px 750px;
+
+}
+
+.あそびば画像 {
+    width: 100%;
+    transition: 0.3s;
+}
+
+.あそびば画像:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    cursor: hand;
+}
+
+
+/* * おてがみ * */
+
+.おてがみ {
+    width: 500px;
+    padding: 150px 0px 0px 150px;
+    margin: 0px 0px 100px 0px;
+}
+
+.おてがみ画像 {
+    width: 100%;
+    transition: 0.3s;
+}
+
+.おてがみ画像:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    cursor: hand;
+}
+
+
+
+/* * フッター * */
+
+.フッター画像 {
+    z-index: 1;
+    width: 100%;
+}
+
+.フッター {
+    position: relative;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: #647689;
+}
+
+.段落 {
+    position: absolute;
+    bottom: 70px;
+    right: 0px;
+    display: grid;
+    grid-template-columns: 480px 480px 480px;
+    gap: 0px;
+}
+
+.文1 {
+    font-family: fot-tsukuardgothic-std, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    padding: 0px 50px 0px 50px;
+    text-align: center;
+    color: #647689;
+}
+
+.見出し1 {
+    font-size: 30px;
+    padding: 150px 0px 0px 0px;
+}
+
+.本文1 {
+    font-size: 20px;
+    line-height: 30px;
+}
+
+
+.文3 {
+    text-align: center;
+    padding: 200px 0px 0px 0px;
+    font-size: 40px;
+    color: #aed2e7;
+    line-height: 35px;
+}
+
+.矢印 {
+    font-family: fot-tsukuardgothic-std, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+
+    transition: 0.3s;
+}
+
+.矢印:hover {
+    transform: translate(0px, -10px);
+    cursor: pointer;
+    cursor: hand;
+}
+
+.文2 {
+    font-family: fot-tsukuardgothic-std, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    padding: 0px 50px 0px 50px;
+    text-align: center;
+    color: #647689;
+}
+
+.見出し2 {
+    font-size: 30px;
+
+}
+
+.本文2 {
+    font-size: 20px;
+    line-height: 30px;
+}
+
+
+
+.リンク付き {
+    padding: 20px 0px 0px 0px;
+}
+
+.リンク1 {
+    padding: 0px 0px 3px 0px;
+    position: relative
+
+}
+
+.リンク1::before {
+    background: #647689;
+    content: '';
+    width: 100%;
+    height: 1.5px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    transform-origin: center top;
+    transform: scale(0, 1);
+    transition: transform .3s;
+}
+
+.リンク1:hover::before {
+    transform-origin: center top;
+    transform: scale(1, 1);
+}
+
+.リンク2 {
+    padding: 0px 0px 3px 0px;
+    position: relative
+}
+
+.リンク2::before {
+    background: #647689;
+    content: '';
+    width: 100%;
+    height: 1.5px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    transform-origin: center top;
+    transform: scale(0, 1);
+    transition: transform .3s;
+}
+
+.リンク2:hover::before {
+    transform-origin: center top;
+    transform: scale(1, 1);
+}
+
+.リンク3 {
+    padding: 0px 0px 3px 0px;
+    position: relative
+}
+
+.リンク3::before {
+    background: #647689;
+    content: '';
+    width: 100%;
+    height: 1.5px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    transform-origin: center top;
+    transform: scale(0, 1);
+    transition: transform .3s;
+}
+
+.リンク3:hover::before {
+    transform-origin: center top;
+    transform: scale(1, 1);
+}
+
+.見出し3 {
+    padding: 50px 0px 0px 0px;
+    font-size: 20px;
+}
+
+.本文3 {
+    padding: 10px 0px 0px 0px;
+}
