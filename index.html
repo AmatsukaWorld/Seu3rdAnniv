@@ -39,20 +39,20 @@
 <!-- ヘッダー -->
 <div class="ヘッダー">
     <div class="h横並び">
-        <div class="hおえかき">#せうくんへのおえかき</div>
-        <div class="hあそびば">#せうくんのあそびば</div>
-        <div class="hおてがみ">#せうくんへのおてがみ</div>
+        <div class="hおえかき jump-button"><a href="#oekaki">#せうくんへのおえかき</a></div>
+        <div class="hあそびば jump-button"><a href="#asobiba">#せうくんのあそびば</a></div>
+        <div class="hおてがみ jump-button"><a href="#otegami">#せうくんへのおてがみ</a></div>
     </div>
 
 </div>
 
 <!-- ロゴ -->
-<div class="ロゴ">
+<div id="top" class="ロゴ">
     <img class="ロゴ画像" src="/image/rogo.png">
 </div>
 
 <!-- おえかき -->
-<div class="oekaki">
+<div id="oekaki" class="oekaki">
     <div class="oekaki-button">
         <a href="/oekaki.html">
             <img class="oekaki-image" src="/image/oekaki.png">
@@ -71,14 +71,14 @@
 
 
 <!-- あそびば -->
-<div class="あそびば">
+<div id="asobiba" class="あそびば">
     <a href="/asobiba.html">
         <img class="あそびば画像" src="/image/asobiba.png">
     </a>
 </div>
 
 <!-- おてがみ -->
-<div class="おてがみ">
+<div id="otegami" class="おてがみ">
     <a href="/otegami.html">
         <img class="おてがみ画像" src="/image/otegami.png">
     </a>
@@ -111,11 +111,11 @@
         </div>
 
 
-        <div class="文3">
-            <div class="矢印">
+        <div class="文3 矢印">
+            <a href="#top">
                 ↑ <br>
                 Top
-            </div>
+            </a>
         </div>
 
         <div class="文2">
@@ -175,33 +175,6 @@
     })
 </script>
 
-  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-
-  <script>
-    $(".矢印").on("click", () => {
-      $("html, body").animate({ scrollTop: 0 }, 400)
-    })
-
-  </script>
-
-  <script>
-    $(".hおえかき").on("click", () => {
-      $("html, body").animate({ scrollTop: 700 }, 400)
-    })
-  </script>
-
-  <script>
-    $(".hあそびば").on("click", () => {
-      $("html, body").animate({ scrollTop: 1800 }, 400)
-    })
-  </script>
-
-  <script>
-    $(".hおてがみ").on("click", () => {
-      $("html, body").animate({ scrollTop: 2220 }, 400)
-    })
-
-  </script>
 
 </body>
 </html>
