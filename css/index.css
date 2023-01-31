@@ -124,6 +124,9 @@ body {
 
 
 /* * おえかき * */
+.oekaki {
+    position: relative;
+}
 
 .oekaki-button {
     width: 500px;
@@ -141,20 +144,15 @@ body {
     cursor: hand;
 }
 
-
-
-.oekaki {
-    position: relative;
-    
-}
-
 .slider{
-    width:70%;
+    width:1000px;
+    max-width:90%;
     margin:0 auto;
 }
 
 .slider-image{
 	width:100%;
+    
 }
 
 
