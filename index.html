@@ -52,25 +52,17 @@
 </div>
 
 <!-- おえかき -->
-<div class="おえかき">
-    <a href="/oekaki.html">
-        <img class="おえかき画像" src="/image/oekaki.png">
-    </a>
-</div>
-
-
-<div class="スライダーー">
-
-    <div class="スライダー枠">
-        <img src="/image/slider-frame.png">
+<div class="oekaki">
+    <div class="oekaki-button">
+        <a href="/oekaki.html">
+            <img class="oekaki-image" src="/image/oekaki.png">
+        </a>
     </div>
-
-    <div class="ダブルスライダー">
-        <div class="スライダー">
-            <div class="スライダー画像"><img src="/image/FA_kotaneko_SD.png"></div> 
-            <div class="スライダー画像"><img src="/image/FA_karegishi-hana_SD.png"></div>
-            <div class="スライダー画像"><img src="/image/FA_wanya_SD.png"></div>
-        </div>
+    
+    <div class="slider">
+        <div><img class="slider-image" src="/image/FA_kotaneko_SD.png"></div> 
+        <div><img class="slider-image" src="/image/FA_karegishi-hana_SD.png"></div>
+        <div><img class="slider-image" src="/image/FA_wanya_SD.png"></div>
     </div>
 
 </div>
@@ -168,7 +160,7 @@
 <!-- スライダー動かすやつ -->  
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
 <script>
-    $('.スライダー').slick({
+    $('.slider').slick({
       autoplay: true,       //自動再生
       autoplaySpeed: 2000,  //自動再生のスピード
       speed: 800,           //スライドするスピード
