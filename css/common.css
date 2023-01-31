@@ -1,0 +1,12 @@
+/* * ページ内ジャンプ * */
+html { scroll-behavior: smooth;}　/* ページ内ジャンプでスクロール */
+
+.jump-button a,a:link,a:hover,a:visited{
+    /* a要素のデフォルトの文字装飾（下線など）を削除 */
+    color : inherit; /* 親要素の文字色にする */
+    text-decoration : none; /* 下線を削除 */
+
+    /* リンクのクリックが動作する範囲を親要素まで広げる   *
+    * （a要素の文字以外の周りをクリックしても動作可能に）*/
+    display: block;
+}
