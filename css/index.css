@@ -130,6 +130,7 @@ body {
 
 .oekaki-button {
     width: 500px;
+    max-width: 85%;
     padding: 170px 0px 0px 50px;
 }
 
@@ -148,11 +149,15 @@ body {
     width:1000px;
     max-width:90%;
     margin:0 auto;
+    border: 35px solid #647689; /* スライダー枠 */
+}
+
+.slick-track{
+    background-color: #647689; /* スライダー表示部の背景を枠と同じ色に */
 }
 
 .slider-image{
 	width:100%;
-    
 }
 
 
