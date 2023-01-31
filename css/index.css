@@ -125,17 +125,17 @@ body {
 
 /* * おえかき * */
 
-.おえかき {
+.oekaki-button {
     width: 500px;
     padding: 170px 0px 0px 50px;
 }
 
-.おえかき画像 {
+.oekaki-image {
     width: 100%;
     transition: 0.3s;
 }
 
-.おえかき画像:hover {
+.oekaki-image:hover {
     transform: scale(1.1);
     cursor: pointer;
     cursor: hand;
@@ -143,49 +143,19 @@ body {
 
 
 
-.スライダーー {
+.oekaki {
     position: relative;
     
 }
 
-.スライダー枠 {
-    position: absolute;
-    top: 0px;
-    right: 200px;
-    z-index: 50;
-}
-
-.スライダー{
+.slider{
     width:70%;
     margin:0 auto;
 }
 
-.スライダー画像{
+.slider-image{
 	width:100%;
 }
-
-.スライダー .slick-slide{
-	height:auto!important;
-}
-
-.スライダー文字 .slick-slide{
-	height:auto!important;
-}
-
-.スライダー文字 {
-    position: absolute;
-    bottom: 0px;
-    right: 0px;
-}
-
-.s文字 {
-    font-family: fot-tsukuardgothic-std, sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    color: white;
-}
-
-
 
 
 /* * あそびば * */
