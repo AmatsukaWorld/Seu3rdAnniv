@@ -18,7 +18,7 @@
     background-color: #f2e830; /* 背景色 */
 }
 
-@media (max-width:1200px){ /* メッセージを表示するブラウザ幅を設定 */
+@media (max-width:1300px){ /* メッセージを表示するブラウザ幅を設定 */
     .message{
         display: block; /* ブラウザ幅がmax-width以下のときのみ表示 */
     }

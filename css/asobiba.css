@@ -99,15 +99,27 @@ a {
 
 /* * なかみ * */
 
-.横並び {
-    display: grid;
-    grid-template-columns: 400px 400px 400px;
-    gap: 50px;
-    text-align: center;
-    margin: 70px 70px 0px 70px;
+.picture-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 70px;
+
 }
 
+.picture{
+    display: inline-flex;
+    width:400px;
+    max-width: 90%;
+    margin:50px;
+}
 
+@media (max-width:1170px){
+    .picture-list {
+        margin: auto;
+        justify-content: center;
+    }
+}
 
 .スクショ {
     width: 100%;
