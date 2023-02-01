@@ -23,14 +23,34 @@ body {
     position: fixed;
     top: 20px;
     right: 40px;
-    display: grid;
-    grid-template-columns: 200px 180px 200px;
-    gap: 20px;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
     cursor: pointer;
     font-family: ab-babywalk, sans-serif;
     font-style: normal;
     font-weight: 400;
     color: #647689;
+}
+
+.h横並び > div{
+    display: inline-flex;
+    padding:5px;
+    margin:10px;
+}
+
+@media(max-width:767px){
+    .ヘッダー{
+        height: 70px;
+    }
+    .h横並び{
+        top:5px;
+        right: 10px;
+    }
+    .h横並び > div{
+        margin:5px;
+        background-color: #B2C3D6;
+    }
 }
 
 .hおえかき {
