@@ -1,3 +1,29 @@
+/* * スマホ非対応メッセージ表示用 * */
+.message{
+    display: none; /* 非表示 */
+    color: #647689;
+    font-family: 'Mochiy Pop One'; /*Google Fontsを使用*/
+    padding:10px;
+    margin: 10px;
+    background-color: rgba(255,255,255,0.7);
+    border: medium dashed #647689;
+}
+
+.message .color-red{
+    color: #ff4b00; /* ユニバーサル配色の赤 */
+}
+
+.message .highlight{
+    text-decoration: underline; /* 下線 */
+    background-color: #f2e830; /* 背景色 */
+}
+
+@media (max-width:1200px){ /* メッセージを表示するブラウザ幅を設定 */
+    .message{
+        display: block; /* ブラウザ幅がmax-width以下のときのみ表示 */
+    }
+}
+
 /* * ページ内ジャンプ * */
 html { scroll-behavior: smooth;}　/* ページ内ジャンプでスクロール */
 
