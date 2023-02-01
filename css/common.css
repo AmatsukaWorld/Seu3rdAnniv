@@ -1,3 +1,7 @@
+body{
+    background-repeat: no-repeat;/*背景画像を繰り返さない*/
+}
+
 /* * スマホ非対応メッセージ表示用 * */
 .message{
     display: none; /* 非表示 */
@@ -56,12 +60,29 @@ a {
 }
 
 .段落 {
+    width:100%;
     position: absolute;
-    bottom: 70px;
-    right: 0px;
-    display: grid;
-    grid-template-columns: 480px 480px 480px;
-    gap: 0px;
+    top: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.段落 > 文1,文2,文3{
+    display: inline-flex;
+}
+
+@media(max-width:900px){
+    .段落{
+        justify-content: center;
+    }
+}
+
+@media(max-width:870px){
+    .段落{
+        top: 10px;
+    }
 }
 
 .文1 {
@@ -75,18 +96,19 @@ a {
 
 .見出し1 {
     font-size: 30px;
-    padding: 150px 0px 0px 0px;
+    margin: 150px 0px 0px 0px;
 }
 
 .本文1 {
     font-size: 20px;
     line-height: 30px;
+    margin-bottom: 50px;
 }
 
 
 .文3 {
     text-align: center;
-    padding: 200px 0px 0px 0px;
+    margin: 200px 0px 0px 0px;
     font-size: 40px;
     color: #aed2e7;
     line-height: 35px;
@@ -110,7 +132,7 @@ a {
     font-family: fot-tsukuardgothic-std, sans-serif;
     font-style: normal;
     font-weight: 400;
-    padding: 0px 50px 0px 50px;
+    margin: 0px 50px 0px 50px;
     text-align: center;
     color: #647689;
 }
@@ -211,4 +233,5 @@ a {
 
 .本文3 {
     padding: 10px 0px 0px 0px;
+    margin: 10px;
 }
