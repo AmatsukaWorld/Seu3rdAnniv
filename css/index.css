@@ -114,6 +114,7 @@ body {
 
 .ロゴ {
     width: 1000px;
+    max-width: 90%;
     margin:0 auto;
     padding: 100px 0px 0px 0px;
 }
@@ -165,8 +166,9 @@ body {
 
 .あそびば {
     width: 500px;
-    padding: 80px 0px 0px 750px;
-
+    max-width: 85%;
+    margin: 80px 0px 0px auto; /* 右寄せ(marginの左0px,右auto) */
+    padding-right: 150px; /* 右端から離れているpx数 */
 }
 
 .あそびば画像 {
@@ -185,8 +187,9 @@ body {
 
 .おてがみ {
     width: 500px;
-    padding: 150px 0px 0px 150px;
-    margin: 0px 0px 100px 0px;
+    max-width: 85%;
+    margin: 150px 0px; /* margin: 上下150px,左右0px */
+    padding-left: 150px; /* 左端から離れているpx数 */
 }
 
 .おてがみ画像 {
