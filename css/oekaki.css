@@ -86,6 +86,7 @@ a {
 
 .ロゴ {
     width: 860px;
+    max-width: 90%;
     margin:0 auto;
     padding: 200px 20px 0px 0px;
 }
