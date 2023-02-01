@@ -132,7 +132,7 @@ body {
 .oekaki-button {
     width: 500px;
     max-width: 85%;
-    padding: 170px 0px 0px 50px;
+    margin: 170px 0px 0px 50px;
 }
 
 .oekaki-image {
@@ -201,4 +201,25 @@ body {
     transform: scale(1.1);
     cursor: pointer;
     cursor: hand;
+}
+
+@media(max-width:830px){
+    .oekaki-button {
+        width: 500px;
+        max-width: 85%;
+        margin: 40px auto; /* 上下：magin80px、左右：中央寄せ/ */
+    }
+    .あそびば {
+        width: 500px;
+        max-width: 85%;
+        margin: 80px auto; /* 上下：magin80px、左右：中央寄せ/ */
+        padding-right: 0; /* 右端から離れているpx数 */
+    }
+    
+    .おてがみ {
+        width: 500px;
+        max-width: 85%;
+        margin: 80px auto; /* 上下：magin80px、左右：中央寄せ/ */
+        padding-left: 0; /* 左端から離れているpx数 */
+    }
 }
