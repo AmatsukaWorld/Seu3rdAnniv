@@ -78,7 +78,7 @@ a {
     position: fixed;
     top: 2px;
     right: 20px;
-    width: 8%;
+    height: 50px;
 }
 
 
@@ -86,6 +86,7 @@ a {
 
 .ロゴ {
     width: 860px;
+    max-width: 90%;
     margin:0 auto;
     padding: 140px 20px 0px 0px;
 }
@@ -98,13 +99,67 @@ a {
 
 
 
-.封筒並び {
-    display: grid;
-    grid-template-columns: 500px 500px;
-    gap: 100px;
-    margin: 100px 170px 0px 170px;
+.envelope-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 100px;
     
 }
+
+.envelope{
+    display: inline-flex;
+    width:500px;
+    max-width: 90%;
+    margin:20px;
+}
+
+@media (max-width:1900px){
+    .envelope-list {
+        margin: 50px;
+    }
+    .envelope{
+        margin:10px;
+    }
+}
+
+@media (max-width:1300px){
+    .envelope-list {
+        margin: 50px;
+    }
+    .envelope{
+        margin:10px;
+    }
+}
+
+@media (max-width:1200px){
+    .envelope-list {
+        margin: 20px;
+    }
+    .envelope{
+        margin:5px;
+    }
+}
+@media (max-width:1100px){
+    .envelope-list {
+        margin: 5px;
+    }
+    .envelope{
+        margin:5px;
+    }
+}
+
+@media (max-width:1040px){
+    .envelope-list {
+        margin: auto;
+        justify-content: center;
+    }
+    .envelope{
+        margin:5px;
+    }
+}
+
+
 
 
 .封筒画像 {
@@ -742,182 +797,4 @@ a {
     font-family: fot-tsukuardgothic-std, sans-serif;
     font-style: normal;
     font-weight: 700;
-}
-
-
-
-/* * フッター * */
-
-.フッター画像 {
-
-    z-index: 1;
-    width: 100%;
-}
-
-.フッター {
-    position: relative;
-    width: 100%;
-}
-
-a {
-    text-decoration: none;
-    color: #647689;
-}
-
-.段落 {
-    position: absolute;
-    bottom: 70px;
-    right: 0px;
-    display: grid;
-    grid-template-columns: 480px 480px 480px;
-    gap: 0px;
-}
-
-.文1 {
-    font-family: fot-tsukuardgothic-std, sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    padding: 0px 50px 0px 50px;
-    text-align: center;
-    color: #647689;
-}
-
-.見出し1 {
-    font-size: 30px;
-    padding: 150px 0px 0px 0px;
-}
-
-.本文1 {
-    font-size: 20px;
-    line-height: 30px;
-}
-
-
-.文3 {
-    text-align: center;
-    padding: 200px 0px 0px 0px;
-    font-size: 40px;
-    color: #aed2e7;
-    line-height: 35px;
-}
-
-.矢印 {
-    font-family: fot-tsukuardgothic-std, sans-serif;
-    font-style: normal;
-    font-weight: 400;
-
-    transition: 0.3s;
-}
-
-.矢印:hover {
-    transform: translate(0px, -10px);
-    cursor: pointer;
-    cursor: hand;
-}
-
-.文2 {
-    font-family: fot-tsukuardgothic-std, sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    padding: 0px 50px 0px 50px;
-    text-align: center;
-    color: #647689;
-}
-
-.見出し2 {
-    font-size: 30px;
-
-}
-
-.本文2 {
-    font-size: 20px;
-    line-height: 30px;
-}
-
-
-
-.リンク付き {
-    padding: 20px 0px 0px 0px;
-}
-
-.リンク1 {
-    padding: 0px 0px 3px 0px;
-    position: relative
-
-}
-
-.リンク1::before {
-    background: #647689;
-    content: '';
-    width: 100%;
-    height: 1.5px;
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    margin: auto;
-    transform-origin: center top;
-    transform: scale(0, 1);
-    transition: transform .3s;
-}
-
-.リンク1:hover::before {
-    transform-origin: center top;
-    transform: scale(1, 1);
-}
-
-.リンク2 {
-    padding: 0px 0px 3px 0px;
-    position: relative
-}
-
-.リンク2::before {
-    background: #647689;
-    content: '';
-    width: 100%;
-    height: 1.5px;
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    margin: auto;
-    transform-origin: center top;
-    transform: scale(0, 1);
-    transition: transform .3s;
-}
-
-.リンク2:hover::before {
-    transform-origin: center top;
-    transform: scale(1, 1);
-}
-
-.リンク3 {
-    padding: 0px 0px 3px 0px;
-    position: relative
-}
-
-.リンク3::before {
-    background: #647689;
-    content: '';
-    width: 100%;
-    height: 1.5px;
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    margin: auto;
-    transform-origin: center top;
-    transform: scale(0, 1);
-    transition: transform .3s;
-}
-
-.リンク3:hover::before {
-    transform-origin: center top;
-    transform: scale(1, 1);
-}
-
-.見出し3 {
-    padding: 50px 0px 0px 0px;
-    font-size: 20px;
-}
-
-.本文3 {
-    padding: 10px 0px 0px 0px;
 }
