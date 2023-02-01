@@ -101,7 +101,14 @@ a {
 
 .FA {
     width: 1000px;
+    max-width: 90%;
     margin:0 auto;
+}
+
+@media(max-width:960px){
+    .FA{
+        margin: 0 10px;
+    }
 }
 
 .画像 {
