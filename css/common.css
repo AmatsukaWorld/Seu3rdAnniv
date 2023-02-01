@@ -116,6 +116,22 @@ a {
     line-height: 35px;
 }
 
+@media(max-width:900px){
+    .文3{
+        margin: 0 0 200px 0;
+    }
+}
+
+@media(max-width:452px){
+    .文3{
+        order: -1; /* flexboxの順序変更 */
+        margin: 60px;
+    }
+    .見出し1{
+        margin-top: 10px;
+    }
+}
+
 .矢印 {
     font-family: fot-tsukuardgothic-std, sans-serif;
     font-style: normal;
