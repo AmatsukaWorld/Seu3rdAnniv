@@ -99,13 +99,67 @@ a {
 
 
 
-.封筒並び {
-    display: grid;
-    grid-template-columns: 500px 500px;
-    gap: 100px;
-    margin: 100px 170px 0px 170px;
+.envelope-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 100px;
     
 }
+
+.envelope{
+    display: inline-flex;
+    width:500px;
+    max-width: 90%;
+    margin:20px;
+}
+
+@media (max-width:1900px){
+    .envelope-list {
+        margin: 50px;
+    }
+    .envelope{
+        margin:10px;
+    }
+}
+
+@media (max-width:1300px){
+    .envelope-list {
+        margin: 50px;
+    }
+    .envelope{
+        margin:10px;
+    }
+}
+
+@media (max-width:1200px){
+    .envelope-list {
+        margin: 20px;
+    }
+    .envelope{
+        margin:5px;
+    }
+}
+@media (max-width:1100px){
+    .envelope-list {
+        margin: 5px;
+    }
+    .envelope{
+        margin:5px;
+    }
+}
+
+@media (max-width:1040px){
+    .envelope-list {
+        margin: auto;
+        justify-content: center;
+    }
+    .envelope{
+        margin:5px;
+    }
+}
+
+
 
 
 .封筒画像 {
