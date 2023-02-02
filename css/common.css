@@ -169,12 +169,12 @@ a {
 
 .リンク付き {
     padding: 20px 0px 0px 0px;
+    color: #5da1ea;
 }
 
 .リンク1 {
     padding: 0px 0px 3px 0px;
     position: relative
-
 }
 
 .リンク1::before {
